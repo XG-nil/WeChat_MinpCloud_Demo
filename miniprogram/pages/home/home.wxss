@@ -1,0 +1,149 @@
+  .slide swiper {
+  height: 400rpx;
+}
+
+.slide swiper image {
+  height: 100%;
+  width: 100%;
+}
+
+.category {
+  box-sizing: border-box;
+  background-color: #f8f9fb;
+}
+
+.category-item {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  font-size: 30rpx;
+  color: rgb(80, 80, 80);
+  margin: 15rpx 0;
+  padding: 10rpx 20rpx 10rpx;
+  background-color: #fff;
+}
+
+.category-item .title {
+  display: flex;
+  margin-bottom: 10rpx;
+  width: 100%;
+}
+
+.category-item .title text {
+  flex: 1;
+}
+
+.category-item .title image {
+  height: 20rpx;
+  width: 20rpx;
+}
+
+.category-item .content {
+  height: 245rpx;
+}
+
+.category-item .content .inner {
+  display: flex;
+  flex-direction: row;
+  height: 245rpx;
+}
+
+.category-item .content .inner .movie-item {
+  display: flex;
+  flex-direction: column;
+  width: 210rpx;
+  height: 210rpx;
+  margin: 10rpx;
+  color: rgb(255, 255, 255);
+  background-size: 210rpx 210rpx;
+  background-color: rgba(67, 102, 167, 0.788);
+}
+
+.category-item .content .inner .movie-item text {
+  text-align: center;
+  margin: auto;
+  font-size: 17px;
+  padding: 20rpx;
+  font-weight: 500;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background-color: #1AAD19;
+  color: rgb(255, 217, 0);
+  font-size: 36rpx;
+}
+.demo-text-1:before{
+  content: 'A';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.zan-dialog__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0);
+  display: none;
+}
+
+.zan-dialog__container {
+  position: fixed;
+  bottom: 400rpx;
+  width: 650rpx;
+  height: 330rpx;
+  margin-left: 50rpx;
+  background: #f1f1f1;
+  transform: translateY(300%);
+  transition: all 0.4s ease;
+  z-index: 12;
+  border-radius: 20rpx;
+}
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}
+.maskWindowInputView {
+  margin: 70rpx 100rpx 20rpx;
+  height: 80rpx;
+}
+.maskWindowInput {
+  margin: 15rpx 10rpx;
+  height: 60rpx;
+  padding: 10rpx 20rpx;
+  font-size: 15px;
+  border: 1px solid #000000;
+  border-radius: 20rpx;
+}
+.maskWindowBtnView {
+  width: 80%;
+  margin-top: 20rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.maskWindowBtn {
+  padding: 10rpx 50rpx;
+  margin: 20rpx;
+  font-size: 14px;
+  border-radius: 10rpx;
+  border: 1px solid #000000;
+}
+.maskWindowOkBtn {
+  padding: 10rpx 50rpx;
+  margin: 20rpx;
+  font-size: 14px;
+  border-radius: 10rpx;
+  border: 1px solid #000000;
+  background-color: #15924bc7;
+}

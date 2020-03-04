@@ -1,0 +1,18 @@
+/* miniprogram/pages/personality/personality.wxss */
+.content {
+  margin: 30rpx 50rpx 10rpx;
+  font-size: 18px;
+  line-height: 1.5;
+  color: rgb(80, 80, 80);
+  overflow-wrap: break-word;
+}
+.button {
+  width: 80%;
+  margin: 30rpx 60rpx;
+  color: white;
+  overflow-wrap: break-word;
+}
+.button::after {
+  border-radius: 20rpx;
+  border: 0;
+}

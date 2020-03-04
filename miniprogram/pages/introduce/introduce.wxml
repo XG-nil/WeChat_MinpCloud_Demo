@@ -1,0 +1,6 @@
+<!--pages/introduce/introduce.wxml-->
+<view class="container">
+   <view>
+     <image src="{{ url }}" class="image" mode="aspectFit"/>
+    </view>
+</view>

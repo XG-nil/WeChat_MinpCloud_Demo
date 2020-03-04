@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/introduce/introduce",
+    "pages/hireInterview/hireInterview",
+    "pages/hirevue/hirevue",
+    "pages/openapi/callback/callback",
+    "pages/personality/personality",
+    "pages/mulImg/mulImg",
+    "pages/application/application",
+    "pages/dream_job/dream_job",
+    "pages/dream_com/dream_com"
+  ],
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1874CD",
+    "borderStyle": "white",
+    "backgroundColor": "#f8f9fb",
+    "list": [
+      {
+        "text": "主页",
+        "pagePath": "pages/home/home",
+        "iconPath": "images/icon_home.png",
+        "selectedIconPath": "images/icon_home_active.png"
+      },
+      {
+        "text": "产品",
+        "pagePath": "pages/application/application",
+        "iconPath": "images/icon_application.png",
+        "selectedIconPath": "images/icon_application_active.png"
+      },
+      {
+        "text": "联系我们",
+        "pagePath": "pages/openapi/callback/callback",
+        "iconPath": "images/icon_contact.png",
+        "selectedIconPath": "images/icon_contact_active.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1874CD",
+    "navigationBarTitleText": "题库类小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json"
+}

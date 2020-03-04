@@ -1,0 +1,27 @@
+<!--pages/hireInterview/hireInterview.wxml-->
+<view class="container">
+  <view class="title">
+    <text>- Hirevue介绍</text>
+  </view>
+  <view class="content">
+    <text>{{ introduce }}</text>
+  </view>
+  <view class="title">
+    <text>- 权限</text>
+  </view>
+  <view class="content">
+    <text>{{ privacy }}</text>
+  </view>
+  <view class="title">
+    <text>- 面试内容</text>
+  </view>
+  <view class="desc">
+    <text>{{ desc1 }}</text>
+  </view>
+  <view class="desc">
+    <text>{{ desc2 }}</text>
+  </view>
+  <view>
+    <button type="primary" bindtap="startHirevue"> 开始</button>
+  </view>
+</view>

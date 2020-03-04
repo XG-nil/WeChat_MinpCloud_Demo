@@ -1,0 +1,11 @@
+<!--miniprogram/pages/mulImg/mulImg.wxml-->
+<view class="container">
+  <view class="tag">
+  <block wx:for="{{item}}" wx:key="buttons">
+  <button class='{{item.checked?"chk_button":"button"}}' data-index="{{ index }}" bindtap='radioButtonTap'>{{item.area}}</button>
+  </block>
+  </view>
+  <view class="imageview">
+    <image src="{{ imageUrl }}" mode="aspectFit" bindtap='onImagePreview' />
+  </view>
+</view>

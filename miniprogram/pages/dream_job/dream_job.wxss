@@ -1,0 +1,49 @@
+/* miniprogram/pages/dream_job/dream_job.wxss */
+.inputView {
+  width: 80%;
+  height: 80rpx;
+  align-self: center;
+  margin-top: 100rpx;
+}
+.textinput {
+  padding: 0rpx 20rpx;
+  height: 80rpx;
+  border: 1px solid #707070;
+  font-size: 15px;
+  color: rgb(71, 71, 71);
+}
+.scrollview {
+  padding: 0rpx 2%;
+  position: fixed;
+  width: 75.5%;
+  margin-top: 180rpx;
+  align-self: center;
+  background-color: #f6f6f6;
+  border: 1px solid #b1b1b1;
+  font-size: 15px;
+  line-height: 25px;
+}
+.buttonView {
+  width: 79%;
+  align-self: center;
+  margin-top: 100rpx;
+}
+.confirmView {
+  width: 40%;
+  align-self: center;
+  margin-top: 100rpx;
+}
+button {
+  height: 40px;
+  line-height: 40px;
+}
+picker {
+  height: 40px;
+  text-align: center;
+  font-size: 15px;
+  line-height:40px;
+  background: initial;
+  background-color: #f6f6f6;
+  border: 1px solid #b1b1b1;
+  color: rgb(71, 71, 71);
+}

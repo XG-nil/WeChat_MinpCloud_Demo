@@ -1,0 +1,10 @@
+/* pages/introduce/introduce.wxss */
+
+.imageview {
+  display:flex; 
+  justify-content: center;  
+}
+.image {
+  margin-left: 1%;
+  width: 98%; 
+}

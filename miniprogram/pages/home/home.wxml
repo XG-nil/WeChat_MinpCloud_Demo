@@ -1,0 +1,40 @@
+<wxs src="../../filter/filter.wxs" module="tools"></wxs>
+<view class="container">
+  <view class="slide">
+    <swiper indicator-dots="true" autoplay="true" interval="5000" duration="1000">
+      <swiper-item wx:for="{{ banner }}" wx:key="id">
+        <image src="{{ item.background }}" data-title="{{ item.id }}" data-index="{{ index }}" bindtap="clickBanner" mode="scaleToFill"/>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="category" scroll-y="true">
+    <block wx:for="{{ category }}" wx:key="">
+      <view class="category-item">
+          <view class="title">
+            <text>{{ item.title }}</text>
+          </view>
+        <scroll-view class="content" scroll-x="true">
+          <view class="inner" style="width:{{item.width}}rpx">
+            <block wx:for="{{ item.item_data }}" wx:key="">
+              <view class="movie-item" data-type="{{ item.type }}" data-type_key="{{ item.type_key }}" data-index="{{ index }}" data-itemIndex="{{ cellindex }}" bindtap='clickItem' style="background-image: url({{item.buttonImg}})">
+                <text>{{ item.title }}</text>
+              </view>
+            </block>
+          </view>
+        </scroll-view>
+      </view>
+    </block>
+  </view>
+</view>
+<view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+  <view class="zan-dialog__mask" bindtap="toggleDialog" />
+  <view class="zan-dialog__container">
+    <view class='maskWindowInputView'>
+      <input class='maskWindowInput' maxlength='100' placeholder='请输入您的姓名或昵称^ω^' bindinput='maskWindowInput'></input>
+    </view>
+    <view class='maskWindowBtnView'>
+      <view class='maskWindowOkBtn' catchtap='maskWindowOk'>确定</view>
+      <view class='maskWindowBtn' catchtap='maskWindowCancel'>取消</view>
+    </view>
+  </view>
+</view>

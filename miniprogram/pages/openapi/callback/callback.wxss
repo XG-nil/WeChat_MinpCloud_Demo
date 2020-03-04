@@ -1,0 +1,6 @@
+/* miniprogram/pages/openapi/callback/callback.wxss */
+
+
+.buttonview {
+  margin: 300rpx 20rpx;
+}

@@ -1,0 +1,13 @@
+<!--miniprogram/pages/personality/personality.wxml-->
+
+<view class="container">
+  <view hidden="{{quesHidden}}" class="content">
+    {{ ques.title }}
+  </view>
+  <view>
+    <button hidden="{{quesHidden}}" class="button" bindtap="optionTap" data-option="A" data-index="{{ idx }}" > {{ ques.optionA }}   
+    </button>
+    <button hidden="{{quesHidden}}" class="button" bindtap="optionTap" data-option="B" data-index="{{ idx }}"> {{ ques.optionB }}
+    </button>
+  </view>
+</view>

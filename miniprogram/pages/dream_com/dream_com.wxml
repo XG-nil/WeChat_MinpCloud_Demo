@@ -1,0 +1,34 @@
+<view class="container">
+  <view class="buttonView">
+  <picker bindchange="bindPositonChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      岗位：{{array[midx]?array[midx]:'点击选择'}}
+    </view>
+  </picker>
+  </view>
+  <view class="title">
+    专业推荐
+  </view>
+  <view class="list">
+    <block wx:for="{{major}}" wx:key="buttons">
+          {{item}}
+    </block>
+  </view>
+  <view class="title">
+    专业推荐
+  </view>
+  <view class="list">
+    <block wx:for="{{major}}" wx:key="buttons">
+          {{item}}
+    </block>
+  </view>
+  <view class="title">
+    专业推荐
+  </view>
+  <view class="list">
+    <block wx:for="{{major}}" wx:key="buttons">
+          {{item}}
+    </block>
+  </view>
+</view>
+
